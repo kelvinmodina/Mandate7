@@ -1,0 +1,7 @@
+.inner-wrapper{margin:0;}
+footer {
+    backface-visibility: hidden;
+    bottom: 10px;
+    display: block;    
+    position:relative;    
+}
