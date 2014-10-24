@@ -72,12 +72,31 @@ global $wp_query;
 		</div>-->
 		<!--End Preloader-->
 		
-		<!-- borders -->
+		<!-- borders 
 		<div id="border-top"></div>
 		<div id="border-right"></div>
 		<div id="border-left"></div>
-		<div id="border-bottom"></div>
+		<div id="border-bottom"></div>-->
 		<!-- End borders -->
+		<div class="links">
+				<ul class="clearfix pull-right">
+					<?php if($spring_options!=null and $spring_options['facebook']!='' ){ ?>
+						<li><a class="facebook" href="<?php echo $spring_options['facebook']; ?>"><i class="fa fa-facebook"></i></a></li>
+					<?php } ?>
+					<?php if($spring_options!=null and $spring_options['twitter']!='' ){ ?>
+					<li><a class="twitter" href="<?php echo $spring_options['twitter']; ?>"><i class="fa fa-twitter"></i></a></li>
+					<?php } ?>
+					
+					<?php if($spring_options!=null and $spring_options['google']!='' ){ ?>
+					<li><a class="google" href="<?php echo $spring_options['google']; ?>"><i class="fa fa-google-plus"></i></a></li>
+					<?php } ?>
+					<?php if($spring_options!=null and $spring_options['linkedin']!='' ){ ?>
+					<li><a class="linkedin" href="<?php echo $spring_options['linkedin']; ?>"><i class="fa fa-linkedin"></i></a></li>
+					<?php } ?>
+					
+					
+				</ul>
+		</div>
 		<?php if(is_page('header-2')){ ?>
 		<!-- Header navigation -->
 		<header class="navbar">
@@ -385,36 +404,20 @@ global $wp_query;
 				<div class="inner">
 					<div class="inner-content">
 						<div class="home-text">
-							<h1><span class="adject"><?php 
+							<!--<h1><span class="adject"><?php 
 								if($spring_options!=null and $spring_options['banner_title']!=''){
 									echo $spring_options['banner_title'];
 								}else{
 									echo "spring|Modern|Parallax";
 								}
-							?></span></h1>
+							?></span></h1>-->
+							<h2>WE ARE <span class="tp-col">MANDATE SEVEN</span></h2>
+							<p>Lorem ipsum dolor es meta sia ipsum dolor es meta sia ipsum dolor es meta sia ipsum dolor es meta sia ipsum dolor es meta sia</p>
+							<a href="#" class="btn btn-primary btn-lg" role="button">LEARN MORE</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="links">
-				<ul class="clearfix">
-					<?php if($spring_options!=null and $spring_options['facebook']!='' ){ ?>
-						<li><a class="facebook" href="<?php echo $spring_options['facebook']; ?>"><i class="fa fa-facebook"></i></a></li>
-					<?php } ?>
-					<?php if($spring_options!=null and $spring_options['twitter']!='' ){ ?>
-					<li><a class="twitter" href="<?php echo $spring_options['twitter']; ?>"><i class="fa fa-twitter"></i></a></li>
-					<?php } ?>
-					
-					<?php if($spring_options!=null and $spring_options['google']!='' ){ ?>
-					<li><a class="google" href="<?php echo $spring_options['google']; ?>"><i class="fa fa-google-plus"></i></a></li>
-					<?php } ?>
-					<?php if($spring_options!=null and $spring_options['linkedin']!='' ){ ?>
-					<li><a class="linkedin" href="<?php echo $spring_options['linkedin']; ?>"><i class="fa fa-linkedin"></i></a></li>
-					<?php } ?>
-					
-					
-				</ul>
-			</div>	
 		</div>
 		<!-- End Home section -->
 		

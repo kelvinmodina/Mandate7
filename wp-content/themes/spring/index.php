@@ -2,40 +2,169 @@
 			<?php 
 				global $wp_query, $spring_options; 
 			?>
-			<!-- Blog Section -->
-			<div id="blog">
+			<!-- Company Description Section -->
+			<div id="company-desc">
 				<div class="container">
-					<div class="col-md-8 col-md-offset-2">
-						<header class="section-header">							
-							<h2 class="parallax-title"><span>We write creative thought <br>Since 1995</span></h2>
-                            <p class="lead">We have created a awesome theme that will help designers, developers and companies create websites for their startups quickly and easily.</p>
-							
-						</header>
+					 <div class="triangle">
+						
+					 </div>
+					 <p>Mandate Seven Advisory is a boutique consulting firm that caters to institutional <br/>investors in the Gulf region. Mandate Seven Advisory is  a joint venture between<br/> its founder and the Kuwait Small Projects Company, founded in 2014.</p>
+				</div>
+			</div>
+			<!-- End Company Description Section -->
+			
+			<!-- ABOUT Section -->
+			<div id="about">
+				<div class="container">
+					<?php
+						query_posts('post_status=publish&post_type=qk_service');
+						while ( have_posts() ) : the_post();
+							the_title("<h2>","</h2>");
+							the_content();
+						endwhile;
+						wp_reset_query();
+					?> 
+				</div>
+			</div>
+			<!-- End ABOUT Section -->
+			
+			<!-- Services Section -->
+			<div id="services">
+				<div class="container">
+					<div class="service-quoute">We are run by <strong>seasoned</strong> individuals with <strong>local</strong> and <strong>international</strong> experience. </div>
+					<?php
+						$qarg = array(
+							'post_status' => 'publish',
+							'post_type' => 'nk_service',
+						);
+						query_posts($qarg);
+						while ( have_posts() ) : the_post();
+							the_title("<h2>","</h2>");
+							the_content();
+						endwhile;
+						wp_reset_query();
+					?> 
+					<div class="service-acco">
+						<div id="accordion" class="panel-group clearfix">
+							<div class="panel panel-default">
+								<a href="#collapse_1" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle">
+									<h4>Manager Selection (Equities, Fixed Income, Hedge Funds, and Real Estate)<i class="indicator fa fa-plus pull-right"></i></h4>						
+								</a>
+								<div class="panel-collapse collapse" id="collapse_1">
+									<div class="panel-body">
+										<div class="service-icon">
+											<i class="fa fa-share-alt"></i>
+										</div>
+										<div class="service-text-block">
+											<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica</p>
+										</div>
+										<div class="service-text-block">
+											<h5>Services includes <i class="fa fa-level-down"></i></h5>
+											<p><i class="fa fa-ellipsis-v"></i> Design <i class="fa fa-ellipsis-v"></i> Development <i class="fa fa-ellipsis-v"></i> Responsive <i class="fa fa-ellipsis-v"></i> Mobile App <i class="fa fa-ellipsis-v"></i> Content management</p>									
+										</div>								
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<a href="#collapse_2" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle">
+									<h4>Asset Allocation<i class="indicator fa fa-plus pull-right"></i></h4>						
+								</a>
+								<div class="panel-collapse collapse" id="collapse_2">
+									<div class="panel-body">
+										<div class="service-icon">
+											<i class="fa fa-lightbulb-o"></i>
+										</div>
+										<div class="service-text-block">
+											<p> Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch. Nihil anim keffiyeh helvetica</p>
+										</div>
+										<div class="service-text-block">
+											<h5>Services includes <i class="fa fa-level-down"></i></h5>
+											<p><i class="fa fa-ellipsis-v"></i> Design <i class="fa fa-ellipsis-v"></i> Development <i class="fa fa-ellipsis-v"></i> Responsive <i class="fa fa-ellipsis-v"></i> Mobile App <i class="fa fa-ellipsis-v"></i> Content management</p>									
+										</div>								
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<a href="#collapse_3" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle">
+									<h4>Portfolio and Risk Analysis<i class="indicator fa fa-plus pull-right"></i></h4>						
+								</a>
+								<div class="panel-collapse collapse" id="collapse_3">
+									<div class="panel-body">
+										<div class="service-icon">
+											<i class="fa fa-lightbulb-o"></i>
+										</div>
+										<div class="service-text-block">
+											<p> Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch. Nihil anim keffiyeh helvetica</p>
+										</div>
+										<div class="service-text-block">
+											<h5>Services includes <i class="fa fa-level-down"></i></h5>
+											<p><i class="fa fa-ellipsis-v"></i> Design <i class="fa fa-ellipsis-v"></i> Development <i class="fa fa-ellipsis-v"></i> Responsive <i class="fa fa-ellipsis-v"></i> Mobile App <i class="fa fa-ellipsis-v"></i> Content management</p>									
+										</div>								
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>	
-			</div>
-			<div class="post-list">
-				<?php 
-					$i = 1; if(have_posts()) :
-						while(have_posts()) : the_post(); 
-				?>
-				<div class="post-entry">
-					<span class="color-overlay"></span>
-					<p class="note-meta"><span class="date-posted"><?php the_time('F jS Y'); ?> / <span class="category"><?php the_category(', '); ?></span> <?php if(is_sticky()){ ?>
-								/ <span class="stick">sticky</span>
-							<?php } ?></span></p>
-					<h4><a  href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
-					<cite class="note-author"><?php _e('Posted by', 'spring'); ?> <?php the_author_posts_link(); ?></cite>
 				</div>
-				<?php $i++; endwhile; ?>
-				<?php else: ?>
-					<h1><?php _e('Nothing Found Here!','spring'); ?></h1>
-				<?php endif; ?>
-				<div class="clearfix aligncenter">
-					<?php spring_pagination($prev = '&laquo;', $next = '&raquo;', $pages=$wp_query->max_num_pages); ?>
-				</div>
-								
 			</div>
-			<!-- End Blog Section -->
+			<!-- End Services Section -->
+			
+			<!-- Team Section -->
+			<div id="team">
+				<div class="container section-header">
+					<h2>Meet our team</h2>
+					<p>The advisory is run by seasoned individuals with local and international experience and coming from various financial institutions in the region.</p>
+				</div>
+				<div class="container-fluid">
+					<div class="container team-wrap">
+						<div class="col-sm-3">
+							<div class="team-inner">
+								<div class="team">
+									<h4>Jeams carry</h4>
+									<h5>Designer / Illustrator </h5>										
+								</div>
+								<img alt="Jeams carry" src="<?php echo get_template_directory_uri();?>/img/team1.jpg">
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="team-inner">
+								<img alt="Jeams carry" src="<?php echo get_template_directory_uri();?>/img/team2.jpg">
+								<div class="team">
+									<h4>Jeams carry</h4>
+									<h5>Designer / Illustrator </h5>										
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="team-inner">
+								<div class="team">
+									<h4>Jeams carry</h4>
+									<h5>Designer / Illustrator </h5>										
+								</div>
+								<img alt="Jeams carry" src="<?php echo get_template_directory_uri();?>/img/team3.jpg">
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="team-inner">
+								<img alt="Jeams carry" src="<?php echo get_template_directory_uri();?>/img/team4.jpg">
+								<div class="team">
+									<h4>Jeams carry</h4>
+									<h5>Designer / Illustrator </h5>										
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!-- End Team Section -->
+			
+			<!-- Contact Section -->
+			<div id="contact">
+				<div class="container">
+					<?php echo do_shortcode('[contact-form-7 id="4" title="Contact form 1"]');?>
+				</div>
+			</div>
+			<!-- End Contact Section -->
 					
 <?php get_footer(); ?>

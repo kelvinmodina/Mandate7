@@ -2,11 +2,11 @@
 		<!-- End section wrapper -->
 		<?php global $spring_options; ?>
 		<!-- Footer section -->
-		<footer id="footer">
+		<!--<footer id="footer">
 			<div class="footer-top clearfix">
 				<div class="container">
-					<div class="row">
-						<div class="col-lg-4 col-sm-4 footer-block">										
+					<div class="row">-->
+						<!--<div class="col-lg-4 col-sm-4 footer-block">										
 							<?php if($spring_options['footer-logo']['url']!=''){ ?>
 								<img src="<?php echo $spring_options['footer-logo']['url']; ?>" alt="<?php bloginfo('name'); ?>">
 							<?php } ?>
@@ -36,8 +36,8 @@
 								}
 							
 							?>
-						</div>
-					</div>
+						</div>-->
+					<!--</div>
 				</div>
 			</div>	
 			<div class="footer-bottom clearfix">
@@ -56,7 +56,7 @@
 					</div>
 				</div>
 			</div>
-		</footer>
+		</footer>-->
 		<!-- End Footer -->
 
 		<?php wp_footer(); ?>		
