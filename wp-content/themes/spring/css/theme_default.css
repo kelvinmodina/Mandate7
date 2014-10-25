@@ -563,7 +563,7 @@ header .navbar-header #logo {
 }
 header .navbar-header #logo img {
     height: 100%;
-    width: 100%;
+    width:auto;
 }
 .show .navbar-header #logo{
     *height: 50px;
