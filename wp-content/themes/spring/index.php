@@ -9,6 +9,11 @@
 						
 					 </div>
 					 <p>Mandate Seven Advisory is a boutique consulting firm that caters to institutional <br/>investors in the Gulf region. Mandate Seven Advisory is  a joint venture between<br/> its founder and the Kuwait Small Projects Company, founded in 2014.</p>
+					 <p><?php 
+						$spring_options	= array();
+					 foreach($spring_options as $a){
+						echo $a;
+					 }?></p>
 				</div>
 			</div>
 			<!-- End Company Description Section -->
