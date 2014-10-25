@@ -50,10 +50,6 @@ global $wp_query;
 	<link rel="apple-touch-icon" sizes="114x114" href="<?php echo $spring_options['apple_icon_114']['url']; ?>">
 	<?php } ?>
 <?php wp_head(); ?>
-	<script type="text/javascript">
-		
-		console.log("spring_options",<?php echo $spring_options; ?>)
-	</script>
 	</head>
 
 	<body <?php body_class(); ?>>
