@@ -54,10 +54,7 @@ button:hover, .theme-btn:hover, .theme-btn:focus, .btncolor:hover, .btncolor:foc
 }
 <?php if($spring_options['logo']['url']!='') { ?>
 .hider{
-	-webkit-background-size:contain;
-	background-size:contain;
 	background-image: url(<?php echo $spring_options['logo_retina']['url']; ?>);<!--added by nomli--><!--Altered by nomli orignal variable is "logo"-->
-	
 }
 <?php } ?>
 <?php if($spring_options['banner_bg']['url']!='') { ?>
