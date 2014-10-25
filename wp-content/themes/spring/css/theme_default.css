@@ -639,13 +639,16 @@ header.navbar.show {
 	-o-transition: padding 0.5s linear 0s;
 }
 header.navbar .navbar-toggle {
-	height: auto;margin: 31px 0 0;padding: 0 25px;
-	-webkit-border-radius:0;
-	-moz-border-radius:0;
-	-ms-border-radius:0;
-	-o-border-radius:0;
-	border-radius:0;
-  border: none;
+	height: auto;
+  margin: 14px;
+  *margin: 31px 0 0;
+  *padding: 0 25px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-ms-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px;
+  border: 2px solid #999;
   outline: none;
 }
 .show .navbar-toggle {margin: 21px 0 0 !important;}
@@ -655,7 +658,7 @@ header.navbar .navbar-toggle .icon-bar {
 	-ms-border-radius:0;
 	-o-border-radius:0;
 	border-radius:0;
-  background: #fff;
+  background: #999;
 }
 header.navbar .navbar-brand {  
   float: none;
@@ -1823,8 +1826,18 @@ p.address,p.phone,p.email,p.map-link{color:#222;}
 
 }
 @media (max-width: 767px){
-	header .navbar-header #logo{margin-left:40px;}
-	header.navbar .navbar-toggle{padding:0 40px;}
+  .triangle{
+    -webkit-background-size: contain;
+    background-size: contain;
+    width: 132px;
+    height:126px;
+    top:-63px;
+  }
+	header .navbar-header #logo{
+    *margin-left:40px;
+    margin-left:15px;
+  }
+	*header.navbar .navbar-toggle{padding:0 40px;}
 	
 	.home-text h1 {font-size: 4em;}
 	.home-wrapper .links {display:none;}
