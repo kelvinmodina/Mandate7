@@ -1746,7 +1746,7 @@ p.address,p.phone,p.email,p.map-link{color:#222;}
  .triangle{
 	background:url(../img/triangle.png) no-repeat;
 	position:absolute;
-	top:-117px;
+	top:-108px;
 	left:0;
 	right:0;
 	margin:0 auto;
@@ -1831,7 +1831,7 @@ p.address,p.phone,p.email,p.map-link{color:#222;}
     background-size: contain;
     width: 132px;
     height:126px;
-    top:-63px;
+    top:-60px;
   }
 	header .navbar-header #logo{
     *margin-left:40px;

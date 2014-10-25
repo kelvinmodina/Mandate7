@@ -44,7 +44,7 @@ jQuery(document).ready(function() {
 		var jqBH = jQuery('html,body'); 
 		jqBH.unbind("scroll mousedown DOMMouseScroll mousewheel keyup"); 
 		jqBH.bind("scroll mousedown DOMMouseScroll mousewheel keyup", function(){ jqBH.stop(true); }); 
-		jqBH.stop(true).animate({scrollTop: jQuery(this.hash).offset().top-60}, 1200, function (){ jqBH.unbind("scroll mousedown DOMMouseScroll mousewheel keyup"); });		
+		jqBH.stop(true).animate({scrollTop: jQuery(this.hash).offset().top-(isMobile? 207 : 0)/*original is minus 60px only*/}, 1200, function (){ jqBH.unbind("scroll mousedown DOMMouseScroll mousewheel keyup"); });		
 	 });
 	 
 	 /*=================================================================
