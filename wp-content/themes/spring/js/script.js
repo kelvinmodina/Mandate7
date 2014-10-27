@@ -137,7 +137,7 @@ jQuery(document).ready(function() {
 	
     $('ul.slimmenu').slimmenu({
         resizeWidth: '1200',
-        collapserTitle: 'Spring',
+        collapserTitle: 'Mandate Seven',
         easingEffect:'easeInOutQuint',
         animSpeed:'medium',
     });

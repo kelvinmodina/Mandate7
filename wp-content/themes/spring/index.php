@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 			<?php 
-				global $wp_query, $spring_options; 
+				global $spring_options;
+				global $wp_query; 
 			?>
 			<!-- Company Description Section -->
 			<div id="company-desc">
@@ -9,11 +10,6 @@
 						
 					 </div>
 					 <p>Mandate Seven Advisory is a boutique consulting firm that caters to institutional <br/>investors in the Gulf region. Mandate Seven Advisory is  a joint venture between<br/> its founder and the Kuwait Small Projects Company, founded in 2014.</p>
-					 <p><?php 
-						$spring_options	= array();
-					 foreach($spring_options as $a){
-						echo $a;
-					 }?></p>
 				</div>
 			</div>
 			<!-- End Company Description Section -->
@@ -165,9 +161,49 @@
 			<!-- End Team Section -->
 			
 			<!-- Contact Section -->
+			<div class="border"></div>
 			<div id="contact">
 				<div class="container">
 					<?php echo do_shortcode('[contact-form-7 id="4" title="Contact form 1"]');?>
+					<div class="gmap col-sm-5">
+						<div class="cpreloader"><i class="fa fa-spinner fa-spin"></i></div>
+						<div class="embed-responsive">
+							<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13907.42458420034!2d47.989586!3d29.374501!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe9c60ceae19750d0!2sMandate+Seven+Advisory!5e0!3m2!1sen!2sph!4v1414415934976" width="100%" height="400" frameborder="0" style="border:0"></iframe>	
+						</div>
+					</div>
+
+					<div class="col-sm-3 address-col">
+					    <address>
+							<strong>office address.</strong>
+							Mazaya Tower 2, 10th Floor
+							Khalid Bin Al-Waleed Street.,
+							Sharq. Kuwait City
+						</address>
+
+						<address>
+						  <strong>contact details</strong>
+						  <abbr title="Phone">Tel:</abbr> +965 22087035
+						  <a href="mailto:info@mandate7.com">info@mandate7.com</a>
+						  <a href="http://www.mandate7.com">www.mandate7.com</a>
+						</address>
+					</div>
+					<div class="links">
+						<ul class="clearfix pull-right">
+							<?php if($spring_options!=null and $spring_options['facebook']!='' ){ ?>
+								<li><a class="facebook" href="<?php echo $spring_options['facebook']; ?>"><i class="fa fa-facebook"></i></a></li>
+							<?php } ?>
+							<?php if($spring_options!=null and $spring_options['twitter']!='' ){ ?>
+							<li><a class="twitter" href="<?php echo $spring_options['twitter']; ?>"><i class="fa fa-twitter"></i></a></li>
+							<?php } ?>
+							
+							<?php if($spring_options!=null and $spring_options['google']!='' ){ ?>
+							<li><a class="google" href="<?php echo $spring_options['google']; ?>"><i class="fa fa-google-plus"></i></a></li>
+							<?php } ?>
+							<?php if($spring_options!=null and $spring_options['linkedin']!='' ){ ?>
+							<!--<li><a class="linkedin" href="<?php echo $spring_options['linkedin']; ?>"><i class="fa fa-linkedin"></i></a></li>
+							<?php } ?>-->
+						</ul>
+					</div>
 				</div>
 			</div>
 			<!-- End Contact Section -->

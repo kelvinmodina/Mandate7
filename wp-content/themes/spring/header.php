@@ -78,25 +78,6 @@ global $wp_query;
 		<div id="border-left"></div>
 		<div id="border-bottom"></div>-->
 		<!-- End borders -->
-		<div class="links">
-				<ul class="clearfix pull-right">
-					<?php if($spring_options!=null and $spring_options['facebook']!='' ){ ?>
-						<li><a class="facebook" href="<?php echo $spring_options['facebook']; ?>"><i class="fa fa-facebook"></i></a></li>
-					<?php } ?>
-					<?php if($spring_options!=null and $spring_options['twitter']!='' ){ ?>
-					<li><a class="twitter" href="<?php echo $spring_options['twitter']; ?>"><i class="fa fa-twitter"></i></a></li>
-					<?php } ?>
-					
-					<?php if($spring_options!=null and $spring_options['google']!='' ){ ?>
-					<li><a class="google" href="<?php echo $spring_options['google']; ?>"><i class="fa fa-google-plus"></i></a></li>
-					<?php } ?>
-					<?php if($spring_options!=null and $spring_options['linkedin']!='' ){ ?>
-					<li><a class="linkedin" href="<?php echo $spring_options['linkedin']; ?>"><i class="fa fa-linkedin"></i></a></li>
-					<?php } ?>
-					
-					
-				</ul>
-		</div>
 		<?php if(is_page('header-2')){ ?>
 		<!-- Header navigation -->
 		<header class="navbar">
@@ -114,7 +95,7 @@ global $wp_query;
 								<?php if($spring_options['logo']['url']!=''){ ?>
 									<img src="<?php echo $spring_options['logo']['url']; ?>" alt="<?php bloginfo('name'); ?>">
 								<?php }else{ ?>
-										<strong>Spring</strong>
+										<strong>Mandate Seven</strong>
 									<?php } ?>
 							
 							</a>
@@ -418,6 +399,23 @@ global $wp_query;
 					</div>
 				</div>
 			</div>
+			<!--<div class="links">
+				<ul class="clearfix pull-right">
+					<?php if($spring_options!=null and $spring_options['facebook']!='' ){ ?>
+						<li><a class="facebook" href="<?php echo $spring_options['facebook']; ?>"><i class="fa fa-facebook"></i></a></li>
+					<?php } ?>
+					<?php if($spring_options!=null and $spring_options['twitter']!='' ){ ?>
+					<li><a class="twitter" href="<?php echo $spring_options['twitter']; ?>"><i class="fa fa-twitter"></i></a></li>
+					<?php } ?>
+					
+					<?php if($spring_options!=null and $spring_options['google']!='' ){ ?>
+					<li><a class="google" href="<?php echo $spring_options['google']; ?>"><i class="fa fa-google-plus"></i></a></li>
+					<?php } ?>
+					<?php if($spring_options!=null and $spring_options['linkedin']!='' ){ ?>
+					<li><a class="linkedin" href="<?php echo $spring_options['linkedin']; ?>"><i class="fa fa-linkedin"></i></a></li>
+					<?php } ?>
+				</ul>
+			</div>-->
 		</div>
 		<!-- End Home section -->
 		

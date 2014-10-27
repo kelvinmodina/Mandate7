@@ -249,7 +249,7 @@ transition: color 0.2s ease-in 0s;
 	margin-bottom: 30px;
 }
 .comment-reply-link, #contact a{
-	color: #fff;
+	*color: #fff;
 	
 }
 .comment-reply-link{
