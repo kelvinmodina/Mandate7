@@ -174,16 +174,16 @@
 
 					<div class="col-sm-3 address-col">
 					    <address>
-							<strong>office address.</strong>
-							Mazaya Tower 2, 10th Floor
-							Khalid Bin Al-Waleed Street.,
+							<strong>office address.</strong><br/>
+							Mazaya Tower 2, 10th Floor<br/>
+							Khalid Bin Al-Waleed Street.,<br/>
 							Sharq. Kuwait City
 						</address>
 
 						<address>
-						  <strong>contact details</strong>
-						  <abbr title="Phone">Tel:</abbr> +965 22087035
-						  <a href="mailto:info@mandate7.com">info@mandate7.com</a>
+						  <strong>contact details</strong><br/>
+						  <abbr title="Phone">Tel:</abbr> +965 22087035<br/>
+						  <a href="mailto:info@mandate7.com">info@mandate7.com</a><br/>
 						  <a href="http://www.mandate7.com">www.mandate7.com</a>
 						</address>
 					</div>
