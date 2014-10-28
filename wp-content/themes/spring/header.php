@@ -383,6 +383,9 @@ global $wp_query;
 		<?php } ?>
 			<div class="wrapper ">
 				<div class="inner">
+					<div class="lgbg"></div>
+					<div class="rgbg"></div>
+					<div class="home-logo"></div>
 					<div class="inner-content">
 						<div class="home-text">
 							<!--<h1><span class="adject"><?php 
@@ -392,9 +395,6 @@ global $wp_query;
 									echo "spring|Modern|Parallax";
 								}
 							?></span></h1>-->
-							<h2>WE ARE <span class="tp-col">MANDATE SEVEN</span></h2>
-							<p>Lorem ipsum dolor es meta sia ipsum dolor es meta sia ipsum dolor es meta sia ipsum dolor es meta sia ipsum dolor es meta sia</p>
-							<a href="#" class="btn btn-primary btn-lg" role="button">LEARN MORE</a>
 						</div>
 					</div>
 				</div>
