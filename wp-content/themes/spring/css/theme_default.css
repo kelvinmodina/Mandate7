@@ -1063,13 +1063,12 @@ display:block;
 }
 .service-quoute{
 	background:#fff url(../img/services-bg.jpg) no-repeat center;
-	color:#fff;
 	padding:4em 0;
 	
 	text-align:center;
 }
 .service-quoute p{
-  color:#fff;
+  color:#faebca;
   font-size:200%;
   margin-bottom:0;
 }
@@ -1781,7 +1780,7 @@ p.address,p.phone,p.email,p.map-link{color:#222;}
  }
  .home-logo {
     background: url(../img/m7midlogo.png) no-repeat center;
-    background-size: 300px 117px;
+    background-size: 300px 115px;
     width:100%;
     height:100%;
     position: absolute;
@@ -1790,7 +1789,7 @@ p.address,p.phone,p.email,p.map-link{color:#222;}
  }
 
  #company-desc{
-	background:#fff url(../img/breakline.png) no-repeat center 5px;
+	background:#faf6eb url(../img/breakline.png) no-repeat center 5px;
 	padding:100px 0 60px;
 	text-align:center;
  }
