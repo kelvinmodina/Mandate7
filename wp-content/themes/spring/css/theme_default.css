@@ -1063,8 +1063,8 @@ display:block;
 }
 .service-quoute{
 	background:#fff url(../img/services-bg.jpg) no-repeat center;
+  background-size: cover;
 	padding:4em 0;
-	
 	text-align:center;
 }
 .service-quoute p{
@@ -1548,7 +1548,7 @@ z-index:-9999;
 position:relative;
 padding:40px 0;
 *background-color:#222;
-background:url(../img/contact-bg.jpg);
+background:#d5d5d5 url(../img/contact-bg.jpg) no-repeat center bottom;
 background-attachment: fixed;
 display:block;
 color:#000;
