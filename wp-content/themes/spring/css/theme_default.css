@@ -1062,11 +1062,15 @@ display:block;
 	text-align:center;
 }
 .service-quoute{
-	background:url(../img/services-bg.jpg) no-repeat center;
-	color:#222222;
+	background:#fff url(../img/services-bg.jpg) no-repeat center;
+	color:#fff;
 	padding:4em 0;
-	font-size:16px;
+	
 	text-align:center;
+}
+.service-quoute p{
+  color:#fff;
+  font-size:200%;
 }
 .service-acco{padding-bottom:80px;background-color:#fff;position:relative;}
 .panel {
@@ -1794,7 +1798,7 @@ p.address,p.phone,p.email,p.map-link{color:#222;}
   color: #222;
  }
  #company-desc  p{
-	color:#3e78a7;
+	color:#000;
  }
  
  /**overrides*/

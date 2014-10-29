@@ -7,11 +7,14 @@
 			<div id="company-desc">
 				<div class="container">
 					 <h2>A boutique consulting firm since 2014</h2>
-					 <p>Mandate Seven Advisory is a boutique consulting firm that caters to institutional <br/>investors in the Gulf region. Mandate Seven Advisory is  a joint venture between<br/> its founder and the Kuwait Small Projects Company, founded in 2014.</p>
+					 <p>Mandate Seven Advisory is a boutique consulting firm that caters to institutional investors in the Gulf region.</p>
+					 <p>Mandate Seven Advisory is  a joint venture between<br/> its founder and the Kuwait Small Projects Company, founded in 2014.</p>
 				</div>
 			</div>
 			<!-- End Company Description Section -->
-			
+			<div class="service-quoute">
+				<div class="container"><p>We are run by <strong>seasoned</strong> individuals with <strong>local</strong> and <strong>international</strong> experience. </p></div>
+			</div>
 			<!-- ABOUT Section -->
 			<div id="about">
 				<div class="container">
@@ -30,7 +33,6 @@
 			<!-- Services Section -->
 			<div id="services">
 				<div class="container">
-					<div class="service-quoute">We are run by <strong>seasoned</strong> individuals with <strong>local</strong> and <strong>international</strong> experience. </div>
 					<?php
 						$qarg = array(
 							'post_status' => 'publish',
