@@ -6,9 +6,11 @@
 			<!-- Company Description Section -->
 			<div id="company-desc">
 				<div class="container">
-					 <h2>A boutique consulting firm since 2014</h2>
-					 <p>Mandate Seven Advisory is a boutique consulting firm that caters to institutional investors in the Gulf region.</p>
-					 <p>Mandate Seven Advisory is  a joint venture between its founder and the Kuwait Small Projects Company, founded in 2014.</p>
+					  <header class="section-header">
+					  	<h2 class="parallax-title"><span>A boutique consulting firm since 2014</span></h2>
+					  </header>
+					  <p>Mandate Seven Advisory is a boutique consulting firm that caters to institutional investors in the Gulf region.</p>
+					  <p>Mandate Seven Advisory is  a joint venture between its founder and the Kuwait Small Projects Company, founded in 2014.</p>
 				</div>
 			</div>
 			<!-- End Company Description Section -->
@@ -18,8 +20,9 @@
 					<?php
 						query_posts('post_status=publish&post_type=qk_service');
 						while ( have_posts() ) : the_post();
-							the_title("<h2>","</h2>");
-							the_content();
+
+						the_title("<header class='section-header'><h2 class='parallax-title'><span>","</span></h2></header>");
+						the_content();
 						endwhile;
 						wp_reset_query();
 					?> 
@@ -39,7 +42,7 @@
 						);
 						query_posts($qarg);
 						while ( have_posts() ) : the_post();
-							the_title("<h2>","</h2>");
+							the_title("<header class='section-header'><h2 class='parallax-title'><span>","</span></h2></header>");
 							the_content();
 						endwhile;
 						wp_reset_query();
@@ -111,8 +114,12 @@
 			
 			<!-- Team Section -->
 			<div id="team">
-				<div class="container section-header">
-					<h2>Meet our team</h2>
+				<div class="container">
+					<header class="section-header">
+						<h2 class="parallax-title">
+							<span>Meet our team</span>
+						</h2>
+					</header>
 					<p>The advisory is run by seasoned individuals with local and international experience and coming from various financial institutions in the region.</p>
 				</div>
 				<div class="container-fluid">
@@ -187,7 +194,7 @@
 					</div>-->
 					<div class="links">
 						<ul class="clearfix pull-right">
-							<?php if($spring_options!=null and $spring_options['facebook']!='' ){ ?>
+							<!--<?php if($spring_options!=null and $spring_options['facebook']!='' ){ ?>
 								<li><a class="facebook" href="<?php echo $spring_options['facebook']; ?>"><i class="fa fa-facebook"></i></a></li>
 							<?php } ?>
 							<?php if($spring_options!=null and $spring_options['twitter']!='' ){ ?>
@@ -196,10 +203,10 @@
 							
 							<?php if($spring_options!=null and $spring_options['google']!='' ){ ?>
 							<li><a class="google" href="<?php echo $spring_options['google']; ?>"><i class="fa fa-google-plus"></i></a></li>
-							<?php } ?>
-							<?php if($spring_options!=null and $spring_options['linkedin']!='' ){ ?>
-							<!--<li><a class="linkedin" href="<?php echo $spring_options['linkedin']; ?>"><i class="fa fa-linkedin"></i></a></li>
 							<?php } ?>-->
+							<?php if($spring_options!=null and $spring_options['linkedin']!='' ){ ?>
+							<li><a class="linkedin" href="<?php echo $spring_options['linkedin']; ?>"><i class="fa fa-linkedin"></i></a></li>
+							<?php } ?>
 						</ul>
 					</div>
 				</div>

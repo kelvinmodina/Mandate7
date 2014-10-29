@@ -783,6 +783,8 @@ min-height:411px;
 	padding-bottom:10px;
 	margin-bottom:10px;
 	border-bottom:1px solid #fff;
+  font-size: 1.1em;
+  font-weight: 400;
 }
 /*eye ball*/
 .eye{width: 20px;height: 20px;background-color: rgba(0,0,0,0.8);position: relative;margin: 12px auto 12px 45%;border-radius:50%;box-shadow: 30px 0px 0px 0px rgba(0,0,0,0.8);-webkit-border-radius:50%;-webkit-box-shadow: 30px 0px 0px 0px rgba(0,0,0,0.8);}
@@ -1048,15 +1050,9 @@ background-color: #222;
  *********************************************/
 #services{
 background-color: #f2f2f2;
-padding:0 0 80px;
+padding:80px 0;
 position:relative;
 display:block;
-}
-#services h2{
-	font-size:48px;
-	font-weight:bold;
-	padding-top:20px;
-	text-align:center;
 }
 #services .vc_row{
 	text-align:center;
@@ -1206,12 +1202,13 @@ margin-top:40px;
  *********************************************/
 #team{
 background-color: #222;
-padding:40px 0 0;
+padding:80px 0 0;
 color:#fff;
 position:relative;
 display:block;
 }
-#team > .container{text-align:center;}
+#team > .container{text-align:center;padding-bottom:40px;}
+#team > .container p{color:#fff;}
 #team .container-fluid{
 	background:#f2f2f2;
 	padding:40px 0;
@@ -1793,14 +1790,10 @@ p.address,p.phone,p.email,p.map-link{color:#222;}
 	padding:100px 0 60px;
 	text-align:center;
  }
- #company-desc h2{
-  font-size:30px;
+ #company-desc h2, #company-desc p{
   color: #222;
  }
- #company-desc  p{
-	color:#000;
- }
- 
+
  /**overrides*/
  .btn{border-radius:0;}
  .btn-primary,
@@ -1860,9 +1853,6 @@ p.address,p.phone,p.email,p.map-link{color:#222;}
   }
    #company-desc{
     background-size: 100%;
-   }
-   #company-desc h2{
-    font-size: 150%;
    }
    .lgbg,.rgbg{
     display: none;
