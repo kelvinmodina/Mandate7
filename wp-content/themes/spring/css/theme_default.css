@@ -764,6 +764,7 @@ header.navbar button:hover{background-color:transparent !important;}
 position:relative;
 padding:80px 0 60px 0;
 background:#4b80aa url(../img/about-bg.jpg) no-repeat center 20%;
+background-size:cover;
 background-attachment: fixed;
 text-align:center;
 min-height:411px;
