@@ -60,7 +60,7 @@ body {
   color: #666666;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-  background:#222;
+  background:#fafafa;
 display:none;  
 }
 
@@ -68,7 +68,12 @@ display:none;
 a{text-decoration:none;}
 a:hover{text-decoration:none;}
 a:focus{outline:none;text-decoration:none;}
-p{color:#555;font-size: 1.1em;line-height: 170%;font-weight:400;}
+p{color:#555;
+font-size: 1.125em;
+line-height: 150%;
+font-weight: 400;
+margin-bottom: 20px;
+}
 .lead {font-weight: 400;}
 .bg-overlay { opacity: 0.01;-webkit-opacity:0.01;-moz-opacity:0.01;filter: alpha(opacity=30);position: absolute;z-index: 0;height: 100%;width: 100%;background-color: #222;}
 .collapse.in-nav {
@@ -372,6 +377,12 @@ text-align:center;
   
 }
 .player {display: block;height: 100%;left: 0;position: fixed;top: 0;width: 100%;z-index: -3;}
+
+.vc_col-sm-8{
+width:700px;
+margin:0 auto;
+
+}
 .main-container {    
     overflow: hidden;
     width: 100%;
@@ -1787,9 +1798,10 @@ p.address,p.phone,p.email,p.map-link{color:#222;}
  }
 
  #company-desc{
-	background:#faf6eb url(../img/breakline.png) no-repeat center 5px;
+	background:#fafafa url(../img/breakline.png) no-repeat center 5px;
 	padding:140px 0 60px;
 	text-align:center;
+	marigin-top:60px;
  }
  #company-desc h2, #company-desc p{
   color: #222;
