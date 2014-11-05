@@ -365,7 +365,13 @@ text-align:center;
   background-image: url("../img/home-bg.jpg") repeat;
   background-size: 2.3%;
   background-origin: 0;
+  /*edited*/
+  overflow:hidden;
 }
+	.home-wrapper.bg video{
+		position:fixed;
+		width:100%;
+	}
 .bg2{
   background-image: url("../img/homebg1.jpg");
    background-attachment: fixed;

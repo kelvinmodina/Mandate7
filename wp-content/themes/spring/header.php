@@ -379,6 +379,7 @@ global $wp_query;
 			<div class="bg-overlay"></div>
 		<?php }else{ ?>
 		<div id="home" class="home-wrapper bg">
+			<video src="http://ak1.picdn.net/shutterstock/videos/5366624/preview/stock-footage-night-light-street-view-on-boats-in-dubai-marina.mp4" autoplay="autoplay" loop></video>
 			<div class="bg-overlay"></div>
 		<?php } ?>
 			<div class="wrapper ">
