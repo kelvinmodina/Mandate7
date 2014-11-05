@@ -363,7 +363,7 @@ text-align:center;
 }
 .home-wrapper.bg{
   background-image: url("../img/home-bg.jpg") repeat;
-  background-size: 2.3%;
+  background-size: 15%;
   background-origin: 0;
   /*edited*/
   overflow:hidden;
