@@ -391,7 +391,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
                         'title' => __('Top Banner Type', 'arista-backend'),
                         'subtitle' => __('Select Your Banner Style', 'arista-backend'),
                         'desc' => '',
-                        'options' => array('image' => 'Image', 'slider' => 'Slider', 'video' => 'Video'), //Must provide key => value pairs for select options
+                        'options' => array('image' => 'Image', 'slider' => 'Slider', 'video' => 'Video', 'videoURL' => 'Video URL'), //Must provide key => value pairs for select options
                         'default' => 'image'
                     ),
 					array(
@@ -423,6 +423,15 @@ if (!class_exists('Redux_Framework_sample_config')) {
                         'default' => 'BsekcY04xvQ',
                     ),
                     
+					array(
+                        'id' => 'videoURL',
+                        'type' => 'text',
+                        'title' => __('Video URL', 'arista-backend'),
+						'desc' => 'URL is string that is playable on html video tag',
+                        //'mode' => false, // Can be set to false to allow any media type, or can also be set to any mime type.
+                        'default' => '',
+                    ),
+					
                    array(
                         'id'        => 'image_slider',
                         'type'      => 'gallery',
