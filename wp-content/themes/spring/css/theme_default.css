@@ -1584,10 +1584,10 @@ z-index:-9999;
 position:relative;
 padding:40px 0;
 *background-color:#222;
-background:#d5d5d5 url(../img/contact.jpg) no-repeat center bottom;
 background-attachment: fixed;
 display:block;
 color:#fff;
+background-image: url(../img/gray-bg.jpg);
  }
  #contact strong{
 	text-transform:uppercase;
