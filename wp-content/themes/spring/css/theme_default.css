@@ -1883,6 +1883,28 @@ overflow: hidden;
 
 }
 @media (max-width: 767px){
+
+	.vc_col-sm-8 {
+	width: 100%;
+	margin: 0 auto;
+	}
+	
+	.gmap {
+	position: relative;
+	min-height: 100%;
+	}
+	
+	.links {
+	position: relative;
+	left: -40px;
+	overflow: hidden;
+	}
+	
+	#services .wpb_wrapper {
+	width: 100%;
+	margin: 0 auto 80px;
+	}
+	
   .home-wrapper.bg{
     background-size: 12%;
   }

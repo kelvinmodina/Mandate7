@@ -190,9 +190,9 @@
 				</div>
 			</div>
 			<!-- End Services Section -->
-			<div class="service-quoute">
+			<!-- <div class="service-quoute">
 				<div class="container "><p>We are run by <b>seasoned</b> individuals with <b>local</b> and <b>international</b> experience. </p></div>
-			</div>
+			</div>-->
 			<!-- Team Section -->
 			<div id="team">
 				<div class="container vc_col-sm-8">
