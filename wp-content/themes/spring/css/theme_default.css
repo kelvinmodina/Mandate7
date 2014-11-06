@@ -1162,9 +1162,10 @@ border-bottom: 1px solid #3e78a7;
 	color:#222;
 	width:8%;
 }
+.service-icon img {float: left;font-size: 48px;color: #222;width: 100%;}
 .service-text-block{
 	float:left;
-	padding-right:40px;
+	padding-left:40px;
 	width:/* 45% */ 70%;
 }
 /*********************************************
@@ -2009,8 +2010,19 @@ overflow: hidden;
 	
 	.panel-group .panel h4 {font-size: 1.2em;padding: 0 40px;}
 	.panel-body {padding: 40px 40px;}
-	.service-icon {float: none;font-size: 48px;width: 8%;}
-	.service-text-block {float: none;padding-right: 0;width: 100%;padding-top: 20px;}
+	.service-icon {
+	float: none;
+	font-size: 48px;
+	width: 50%;
+	margin: 0 auto;}
+		
+	.service-icon img {
+	float: left;
+	font-size: 48px;
+	color: #222;
+	width: 80%;
+	}
+	.service-text-block {float: none;padding-right: 0;width: 100%;padding-top: 20px;padding-left: 0px;clear: both;}
 	
 	.copyright {text-align: center;}
 	.txtright {text-align: center;}

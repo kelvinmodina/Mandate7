@@ -55,7 +55,10 @@
 								<div class="panel-collapse collapse" id="collapse_1">
 									<div class="panel-body">
 										<div class="service-icon">
-											<i class="fa fa-users"></i>
+										<!--	<i class="fa fa-users"></i>-->		
+											
+												<img src="<?php echo get_template_directory_uri();?>/img/managerselection.png">
+															
 										</div>
 										<div class="service-text-block">
 											<p>Mandate Seven Advisory conducts external manager searches across all asset classes and regions. Mandate Seven further seeks to add value by bringing forward new fund managers when possible, conducting an independent due diligence on fund managers, aiding in fee negotiation, as well as advising on portfolio transition and implementation when necessary. </p>
@@ -74,7 +77,8 @@
 								<div class="panel-collapse collapse" id="collapse_2">
 									<div class="panel-body">
 										<div class="service-icon">
-											<i class="fa fa-bank "></i>
+											<!--<i class="fa fa-bank "></i>-->		
+											<img src="<?php echo get_template_directory_uri();?>/img/assetallocation.png">
 										</div>
 										<div class="service-text-block">
 											<p> Asset Allocation, a critical aspect within investment management, is the primary driver of portfolio risk and return over the long run. Mandate Seven Advisory is well positioned to advise and create actionable and realistic asset allocation models that seek to diversify and balance risk with return - providing mechanisms for rebalancing as well as methodology for moving the allocation according to market conditions. </p>
@@ -93,7 +97,8 @@
 								<div class="panel-collapse collapse" id="collapse_3">
 									<div class="panel-body">
 										<div class="service-icon">
-											<i class="fa fa-book"></i>
+											<!--<i class="fa fa-book"></i>-->	
+											<img src="<?php echo get_template_directory_uri();?>/img/portfolioriskanalysis.png">
 										</div>
 										<div class="service-text-block">
 											<p> Portfolio analysis, a key area of expertise for Mandate Seven Advisory helps the client look at his portfolio exposure through many lenses, identifying characteristics, risk and return drivers, as well as aiding in projecting future performance. Recommendations can be made to enhance portfolio performance, stream-lining exposure, as well as hedging. </p>
@@ -112,7 +117,8 @@
 								<div class="panel-collapse collapse" id="collapse_4">
 									<div class="panel-body">
 										<div class="service-icon">
-											<i class="fa fa-dashboard"></i>
+											<!--<i class="fa fa-dashboard"></i>-->	
+											<img src="<?php echo get_template_directory_uri();?>/img/performancemeasurement.png">
 										</div>
 										<div class="service-text-block">
 											<p> Performance measurement is a very important aspect of investment management and operations. For performance metrics to be meaningful and representative of reality, the appropriate benchmarks and performance measurement methodologies need to be used. Mandate Seven Advisory can help in benchmarking and selection of appropriate methodologies as well as in implementation for ongoing operation as well as evaluation on an ad-hoc basis. </p>
@@ -131,7 +137,8 @@
 								<div class="panel-collapse collapse" id="collapse_5">
 									<div class="panel-body">
 										<div class="service-icon">
-											<i class="fa fa-suitcase "></i>
+											<!--<i class="fa fa-suitcase "></i>-->
+												<img src="<?php echo get_template_directory_uri();?>/img/transactioncostanalysis.png">
 										</div>
 										<div class="service-text-block">
 											<p> Transaction costs can be highly detrimental to long-term performance. These costs are often explicit and quantifiable such as brokerage commissions and other times they are implicit and difficult to measure as in the case of market impact. Mandate Seven Advisory can conduct in-depth transaction cost analyses in order to minimize transaction costs and provide solutions for on-going savings - be it for a single large transaction or on-going investment operations.  </p>
@@ -150,7 +157,8 @@
 								<div class="panel-collapse collapse" id="collapse_6">
 									<div class="panel-body">
 										<div class="service-icon">
-											<i class="fa fa-key"></i>
+											<!--<i class="fa fa-key"></i>-->
+											<img src="<?php echo get_template_directory_uri();?>/img/implementationprocurement.png">
 										</div>
 										<div class="service-text-block">
 											<p> When a client is ready to launch an investment, Mandate Seven Advisory can advise on the procurement of the investment vehicle, bookkeeping and custody providers, and implementation be it through transition management or otherwise. </p>
@@ -169,7 +177,8 @@
 								<div class="panel-collapse collapse" id="collapse_7">
 									<div class="panel-body">
 										<div class="service-icon">
-											<i class="fa fa-search"></i>
+											<!--<i class="fa fa-search"></i>-->
+												<img src="<?php echo get_template_directory_uri();?>/img/researchconsulting.png">
 										</div>
 										<div class="service-text-block">
 											<p> Mandate Seven Advisory provides consultations and conducts bespoke research on specific situations encountered by institutions. </p>
