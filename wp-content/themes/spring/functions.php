@@ -128,6 +128,7 @@ function spring_scripts() {
 	wp_enqueue_script("TweenMax", get_template_directory_uri()."/js/TweenMax.min.js",array(),false,true);
 	wp_enqueue_script("ScrollToPlugin", get_template_directory_uri()."/js/ScrollToPlugin.min.js",array(),false,true);
 	wp_enqueue_script("content-scroll", get_template_directory_uri()."/js/content-scroll.js",array(),false,true);
+	wp_enqueue_script("hamburger-icon", get_template_directory_uri()."/js/hamburger-icon.js",array(),false,true);
 	$banner_type='';
 	$banner_type= $spring_options['banner_type'];
 	if($banner_type=='video' or is_page('home-video')){ 
