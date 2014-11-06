@@ -381,7 +381,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
                         'title' => __('Top Header Menu Style', 'arista-backend'),
                         'subtitle' => __('Select Your Header Style', 'arista-backend'),
                         'desc' => '',
-                        'options' => array('header-1' => 'Default', 'header-2' => 'Style 2'), //Must provide key => value pairs for select options
+                        'options' => array('header-1' => 'Default', 'header-2' => 'Style 2', 'header-3' => 'Humberger Icon'), //Must provide key => value pairs for select options
                         'default' => 'header-1'
                     ),
 					

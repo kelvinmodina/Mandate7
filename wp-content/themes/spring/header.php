@@ -276,6 +276,123 @@ global $wp_query;
 		</nav>
 		<!-- End Navigation -->
 		
+		<?php }elseif($spring_options['header_type']=='header-3'){ ?>
+		<!-- Navigation -->
+		<nav>
+			<!-- Mobile menu -->
+			<div class="mobile-nav hidden-lg">
+			<?php 
+				if(is_page_template('template-home.php') or !has_nav_menu( 'primary' )){
+					$defaults1= array(
+							'theme_location'  => 'one_page',
+							'menu'            => '',
+							'container'       => '',
+							'container_class' => '',
+							'container_id'    => '',
+							'menu_class'      => 'slimmenu',
+							'menu_id'         => '',
+							'echo'            => true,
+							 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+							 'walker'            => new wp_bootstrap_navwalker(),
+							'before'          => '',
+							'after'           => '',
+							'link_before'     => '',
+							'link_after'      => '',
+							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+							'depth'           => 0,
+						);
+						if ( has_nav_menu( 'one_page' ) ) {
+							wp_nav_menu( $defaults1 );
+						}
+				}else{
+
+					$defaults1= array(
+							'theme_location'  => 'primary',
+							'menu'            => '',
+							'container'       => '',
+							'container_class' => '',
+							'container_id'    => '',
+							'menu_class'      => 'slimmenu',
+							'menu_id'         => '',
+							'echo'            => true,
+							'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+							'walker'            => new wp_bootstrap_navwalker(),
+							'before'          => '',
+							'after'           => '',
+							'link_before'     => '',
+							'link_after'      => '',
+							'items_wrap'      => '<ul data-breakpoint="800" id="%1$s" class="%2$s">%3$s</ul>',
+							'depth'           => 0,
+						);
+						if ( has_nav_menu( 'primary' ) ) {
+							wp_nav_menu( $defaults1 );
+						}
+				}
+				?>
+				
+			</div>
+			<!-- End Mobile menu -->
+			<!-- desktop menu -->
+			<div class="visible-lg">
+				<section id="navi">
+					<a id="hamburger-icon"><span></span></a>
+					<span class="btn" id="navih"></span>
+				</section>
+				<section id="navibar">
+					<section id="navitext">
+						<?php 
+					if(is_page_template('template-home.php') or !has_nav_menu( 'primary' )){
+					$defaults1= array(
+							'theme_location'  => 'one_page',
+							'menu'            => '',
+							'container'       => '',
+							'container_class' => '',
+							'container_id'    => '',
+							'menu_class'      => '',
+							'menu_id'         => '',
+							'echo'            => true,
+							 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+							 'walker'            => new wp_bootstrap_navwalker(),
+							'before'          => '',
+							'after'           => '',
+							'link_before'     => '',
+							'link_after'      => '',
+							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+							'depth'           => 0,
+						);
+						if ( has_nav_menu( 'one_page' ) ) {
+							wp_nav_menu( $defaults1 );
+						}
+				}else{
+
+					$defaults1= array(
+							'theme_location'  => 'primary',
+							'menu'            => '',
+							'container'       => '',
+							'container_class' => '',
+							'container_id'    => '',
+							'menu_class'      => '',
+							'menu_id'         => '',
+							'echo'            => true,
+							'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+							'before'          => '',
+							'after'           => '',
+							'link_before'     => '',
+							'link_after'      => '',
+							'items_wrap'      => '<ul data-breakpoint="800" id="%1$s" class="%2$s">%3$s</ul>',
+							'depth'           => 0,
+						);
+						if ( has_nav_menu( 'primary' ) ) {
+							wp_nav_menu( $defaults1 );
+						}
+				}
+				?>
+					</section>
+				</section>
+			</div>
+			<!-- End desktop menu -->
+		</nav>
+		<!-- End Navigation -->
 		<?php }else{ ?>
 		<!-- Header navigation -->
 		<header class="navbar">

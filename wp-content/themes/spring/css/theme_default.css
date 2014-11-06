@@ -1861,8 +1861,77 @@ overflow: hidden;
  .links ul li a{
 	line-height:50px;
  }
+ 
 /*********************************************
- * 14. MEDIA QUERY (RESPONSIVE LAYOUT)
+ * 15. NEW CUSTOM CSS
+ *********************************************/
+
+ #hamburger-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  /*padding: 10px 30px 14px 0px;*/
+  z-index: 99999;
+  margin-left:-15px;
+}
+#hamburger-icon span, #hamburger-icon span:before, #hamburger-icon span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 2px;
+  width: 30px;
+  background: black;
+  position: absolute;
+  display: block;
+  content: '';
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+#hamburger-icon:hover > span:before {
+    top: 0px;
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+#hamburger-icon:hover > span:after {
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    bottom: 0px;
+}
+#hamburger-icon span:before {
+  top: -10px;
+}
+#hamburger-icon span:after {
+  bottom: -10px;
+}
+
+#hamburger-icon.active span {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+#hamburger-icon.active span:before, #hamburger-icon.active span:after {
+  top: 0px;
+}
+#hamburger-icon.active span:before {
+    background:transparent;
+}
+#hamburger-icon.active span:after {
+    background:transparent;
+}
+
+/*********************************************
+ * 15. MEDIA QUERY (RESPONSIVE LAYOUT)
  *********************************************/
 @media (max-width : 1224px) {
 	.home-text h1 {font-size: 6em;}
